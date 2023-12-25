@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project1 Online STORE</title>
+    <link rel="stylesheet" href="css/online.css">  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,500;0,600;0,700;0,800;0,900;1,200;1,800&display=swap"
+        rel="stylesheet" />
+        <style>
+            
+            .links ul li.active a {
+                color: #ff0000; 
+            }
+        </style>
+</head>
+
+<body>
+<main>
+    <section id="login">
+        <h2>Login</h2>
+       
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+    <section id="cart">
+        <h2>Shopping Cart</h2>
+      
+        <ul id="cart-items"></ul>
+       
+        <button onclick="checkout()">Checkout</button>
+    </section>
+</main>
+   
+    <div class="parent">
+
+        <div class="header">
+            <div class="container">
+                <img class="logo" src="C:\Users\alios\OneDrive\Pictures\Saved Pictures\OIP (5).jpeg" alt="">
+                <div class="links">
+                    <span class="icon">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </span>
+                    <ul>
+                        <li class="active"><a href="#HOME">HOME</a></li>
+                        <li><a href="#CATEGORIES">CATEGORIES</a></li>
+                        <li><a href="#CONTACT US">CONTACT US</a></li>
+                        <li><a href="#SIGN UP">SIGN UP</a></li></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="landing">
+        <div class="intro-text">
+            <h1>WELCOME TO Online store.</h1>
+            <p>we have discounts</p>
+        </div>
+    </div>
+    <div class="features">
+        <div class="container">
+            <div class="feat">
+                <i class="fas fa-gem fa-3x"></i>
+                <h3>TELL US YOUR IDEA</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus est natus, voluptatum aliquam
+                    rerum distinctio minima nam minus corporis rem odio hic, quia, iure magni facere eaque quam a nulla!
+                </p>
+                </div>
+                <div class="feat">
+                    <i class="fas fa-magic fa-3x"></i>
+                <h3>TELL US YOUR FEEDBACK</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus est natus, voluptatum aliquam
+                    rerum distinctio minima nam minus corporis rem odio hic, quia, iure magni facere eaque quam a nulla!
+                </p>
+                </div>
+                <div class="feat">
+                    <i class="fas fa-globe fa-3x"></i>
+                <h3>We will do all the Work</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus est natus, voluptatum aliquam
+                    rerum distinctio minima nam minus corporis rem odio hic, quia, iure magni facere eaque quam a nulla!
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="service">
+        <div class="container">
+            <h2 class="special-heading">offers</h2>
+            <p>buy from our site</p>
+        </div>
+    </div>
+    
+    <div>
+        <h2>Electronics</h2>
+        <img src= "https://th.bing.com/th/id/OIP.HUrrXkZbXxQD0fnhVeQeNgHaHa?w=195&h=195&c=7&r=0&o=5&pid=1.7"alt="" width="250px" height="250px">
+        <ul>
+        <li>iphone 14 pro max = <del> 1000$</del> 800$ </li>
+        <li>iphone 14 pro = <del> 800$</del> 650$ </li>
+        <li>iphone 14 = <del> 700$ </del> 550$ </li>
+        
+        </ul>
+        <a href="https://www.apple.com/" target="_blank">Apple</a>
+        <button onclick="addToCart(1)">Add to Cart</button>
+        <hr>
+        <img src="https://th.bing.com/th/id/OIP.9yXfiVcSuzmw0f5hGnBH9AHaEg?w=298&h=182&c=7&r=0&o=5&pid=1.7" alt=""width="250px"height="250px">
+        <p>lenovo ideapad gaming 3</p>
+        <p><del>1250$ </del> 900$ </p>
+
+        <a href="https://www.lenovo.com/eg/en/" target="_blank"> Lenovo</a>
+        <button onclick="addToCart(1)">Add to Cart</button>
+        <hr>
+        </div>
+        <h2>Cars</h2>
+        <img src="https://th.bing.com/th/id/OIP.KCHmrjgzdHoCBIn7Naa3_gHaE8?w=293&h=180&c=7&r=0&o=5&pid=1.7" alt="" width="250px" height="250px">
+        <p>Toyota corolla</p>
+        <P>20000$</P>
+        <a href="https://www.toyota.com/" target="_blank"> Toyota</a>
+        <button onclick="addToCart(1)">Add to Cart</button>
+        <hr>
+        <img src="https://th.bing.com/th/id/OIP.oZ-_lqsT_FyGq5joQebF1gHaEK?w=293&h=180&c=7&r=0&o=5&pid=1.7alt=" width="250px" height="250px">
+        <p>BMW i8</p>
+        <P>120000$</P>
+        <a href="https://www.bmw.com/en/index.html" target="_blank"> BMW</a>
+        <button onclick="addToCart(1)">Add to Cart</button>
+
+    </div>
+    <script>
+        function addToCart(productId) {
+            
+            alert('Product added to cart! Product ID: ' + productId);
+        }
+
+        function checkout() {
+            
+            alert('Checkout functionality is not implemented in this example.');
+        }
+
+        function login() {
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+           
+            fetch('/api/users/' + username)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('User not found');
+                    }
+                    return response.json();
+                })
+                .then(user => {
+                    if (user.password === password) {
+                        alert('Login successful!');
+                    } else {
+                        alert('Invalid password');
+                    }
+                })
+                .catch(error => {
+                    alert('Login failed. ' + error.message);
+                });
+        }
+    </script>
+
+</body>
+
+</html>
